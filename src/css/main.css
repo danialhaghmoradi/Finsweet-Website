@@ -1,0 +1,73 @@
+@import "tailwindcss";
+@import "swiper/css";
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  @font-face {
+    font-family: "regular-popins";
+    src: url("../../public/fonts/Poppins-Regular.eot") format("eot"),
+      url("../../public/fonts/Poppins-Regular.ttf") format("truetype"),
+      url("../../public/fonts/Poppins-Regular.woff") format("woff"),
+      url("../../public/fonts/Poppins-Regular.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "bold-popins";
+    src: url("../../public/fonts/Poppins-Bold.eot") format("eot"),
+      url("../../public/fonts/Poppins-Bold.ttf") format("truetype"),
+      url("../../public/fonts/Poppins-Bold.woff") format("woff"),
+      url("../../public/fonts/Poppins-Bold.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "semibold-popins";
+    src: url("../../public/fonts/Poppins-SemiBold.eot") format("eot"),
+      url("../../public/fonts/Poppins-SemiBold.ttf") format("truetype"),
+      url("../../public/fonts/Poppins-SemiBold.woff") format("woff"),
+      url("../../public/fonts/Poppins-SemiBold.woff2") format("woff2");
+  }
+
+     @theme {
+    --font-family-regular: "regular-popins", sans-serif;
+    --font-family-bold: "bold-popins", sans-serif;
+    --font-family-semibold: "semibold-popins", sans-serif;
+  }
+}
+/*------------------------- swiper----------------------- */
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
